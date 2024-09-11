@@ -1,0 +1,940 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F9F6F4;
+}
+
+.trong {
+    height: 80px;
+}
+
+.r-banner {
+    position: relative;
+}
+
+.r-banner>img {
+    width: 100%;
+    height: 730px;
+}
+
+.container-1 {
+    width: 1470px;
+    top: 0px;
+    position: absolute;
+}
+
+.container-2 {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.r-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute
+}
+
+.r-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #000;
+}
+
+.r-icon-1 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.r-icon-2 {
+    margin-top: 30px;
+    font-size: 25px;
+    display: flex;
+    gap: 120px;
+}
+
+.r-icon-2>a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cormorant, serif;
+    color: #000;
+}
+
+.r-hot {
+    margin-top: 30px;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.r-hot::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: top 0.5s ease-in-out;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 1;
+}
+
+.r-hot>a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.r-hot:hover {
+    border: 1px solid #000;
+}
+
+.r-hot>a:hover {
+    color: #fff;
+}
+
+.r-hot:hover::before {
+    top: 0;
+}
+
+
+.r-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.r-logo-1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.r-logo>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-item {
+    border: none;
+}
+
+.nav>li>a {
+    color: #000;
+}
+
+.nav>li>a:hover {
+    color: #000;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item:hover {
+    border: none;
+}
+
+
+
+
+.r-our {
+    width: 100%;
+    height: 1450px;
+    position: relative;
+}
+
+.r-mau-all {
+    width: 100%;
+    margin-top: 55px;
+    position: absolute;
+}
+
+.r-mau {
+    width: 760px;
+    height: 800px;
+    background-color: #E3DEE4;
+}
+
+.r-our-1 {
+    width: 1300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.r-our-all {
+    position: absolute;
+}
+
+.r-our-all>h1 {
+    font-size: 70px;
+    font-family: Cormorant, serif;
+
+}
+
+.r-our-product {
+    width: 100%;
+    height: 565px;
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    top: 150px;
+}
+
+.r-our-product-all {
+    width: 400px;
+    height: 565px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.r-our-product-all>a {
+    text-decoration: none;
+}
+
+.r-our-product-all>a>img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+.r-our-product-all:hover {
+    box-shadow: 0 0 10px 0 #999;
+}
+
+.r-our-product-1 {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.r-our-product-p {
+    margin-bottom: 50px;
+}
+
+.r-our-product-p>p {
+    margin-top: 20px;
+}
+
+.r-our-product-1>a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.r-our-product-1>a>h3 {
+    font-size: 35px;
+    font-family: Cormorant, serif;
+
+}
+
+.r-our-product-a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 17px 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.r-our-product-a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: left 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.r-our-product-a:hover::before {
+    /* top: 0; */
+    left: 0;
+}
+
+.r-our-product-a:hover {
+    color: #fff;
+}
+
+
+
+.r-paradise {
+    width: 100%;
+    border-bottom: 1px solid #9C9B99;
+    padding-bottom: 40px;
+}
+
+.r-paradise-all {
+    width: 100%;
+}
+
+.r-paradise-all>h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    color: #151515;
+    font-family: Cormorant, serif;
+}
+
+.r-paradise-all-1 {
+    width: 850px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: Cormorant, serif;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.r-paradise-phone-1 {
+    border-right: 1px solid #9C9B99;
+    padding-right: 25px;
+}
+
+.r-paradise-phone-1>span {
+    font-size: 25px;
+}
+
+.r-paradise-phone-2 {
+    border-right: 1px solid #9C9B99;
+    padding-right: 25px;
+}
+
+.r-paradise-phone-2>span {
+    font-size: 25px;
+}
+
+.r-paradise-phone-3 {
+    margin-left: 0px;
+}
+
+.r-paradise-phone-3>span {
+    font-size: 25px;
+}
+
+.r-footer-all {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.r-footer {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-footer-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.r-footer-icon>a>i {
+    font-size: 20px;
+
+}
+
+.r-footer-icon>a {
+    text-decoration: none;
+    color: #151515;
+
+}
+
+.r-footer-privacy>a {
+    text-decoration: none;
+    color: #212120;
+    font-weight: 100;
+}
+
+.r-footer-mail>a {
+    text-decoration: none;
+    color: #212120;
+    font-weight: 100;
+}
+
+.nutbam {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    /* position: fixed; */
+    z-index: 1;
+}
+
+.nut-1 {
+    width: 1430px;
+}
+
+.nut-2 {
+    position: fixed;
+    text-decoration: none;
+    background-color: rgb(0 0 0 / 30%);
+    padding: 10px 15px;
+    font-size: 20px;
+    z-index: 1000;
+    color: #fff;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nut-2:hover {
+    background-color: #212120;
+}
+
+.icon-menu {
+    font-size: 30px;
+    display: none;
+}
+
+.menu {
+    display: none;
+    width: 20%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    padding-top: 150px;
+    position: absolute;
+    position: relative;
+    position: fixed;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 5px 0;
+    min-height: 70px;
+
+}
+
+.menu ul li a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.7s ease;
+}
+
+.menu ul li a:hover {
+    color: #63ADD7;
+}
+
+.close-menu {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    color: #708496;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.close-menu:hover {
+    color: #333;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media all and (min-width: 1025px) and (max-width: 1380px) {
+    body {
+        max-width: 1380px;
+        width: 100%;
+    }
+
+    header {
+        min-width: 1025px;
+    }
+
+    main {
+        min-width: 1025px;
+    }
+
+    footer {
+        min-width: 1025px;
+    }
+
+    .container-2 {
+        max-width: 1380px;
+        width: 100%;
+    }
+
+    .container-1 {
+        width: 100%;
+    }
+
+    .r-menu {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-icon {
+        width: 100%;
+    }
+
+    .r-icon-2 {
+        width: 30%;
+    }
+
+    .r-logo {
+        width: 30%;
+    }
+
+    .r-icon-1 {
+        display: none;
+    }
+
+    .r-hot {
+        display: none;
+    }
+
+    .r-our {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-mau-all {
+        width: 100%;
+        height: 900px;
+    }
+
+    .r-mau {
+        height: 900px;
+    }
+
+    .r-our-1-all {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-our-1 {
+        width: 95%;
+        height: 200px;
+        align-items: center;
+    }
+
+    .r-our-all {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-our-product {
+        width: 100%;
+        gap: 60px;
+    }
+
+    .r-our-product-all {
+        width: 28%;
+    }
+
+    .r-our-product-1>a>h3 {
+        font-size: 27px;
+    }
+
+    .r-our-product-a {
+        padding: 13px 30px;
+    }
+
+
+
+
+    .r-footer-all {
+        width: 100%;
+    }
+
+    .r-paradise {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    header {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    main {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    footer {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    .container-2 {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    .trong {
+        min-width: 601px;
+        width: 100%;
+    }
+
+    .container-1 {
+        width: 100%;
+    }
+
+    .r-menu {
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        left: 50px;
+    }
+
+    .menu {
+        width: 35%;
+    }
+
+    .r-icon {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .icon-menu {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .r-icon-1 {
+        display: none;
+    }
+
+    .r-icon-2 {
+        display: none;
+    }
+
+    .r-hot {
+        display: none;
+    }
+
+    .r-our {
+        width: 100%;
+        height: 2110px;
+        margin: 0 auto;
+    }
+
+    .r-mau-all {
+        width: 100%;
+        height: 900px;
+    }
+
+    .r-mau {
+        width: 100%;
+        height: 900px;
+    }
+
+    .r-our-1-all {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .r-our-1 {
+        width: 90%;
+        height: 200px;
+        align-items: center;
+    }
+
+    .r-our-all {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-our-all>h1 {
+        font-size: 70px;
+    }
+
+    .r-our-product {
+        width: 100%;
+    }
+
+    .r-our-product-all {
+        width: 45%;
+    }
+
+    .r-our-product-1>a>h3 {
+        font-size: 30px;
+    }
+
+    .r-our-product-a {
+        padding: 13px 30px;
+    }
+
+    .r-footer-all {
+        width: 100%;
+    }
+
+    .r-paradise {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-paradise-all {
+        width: 100%;
+    }
+
+    .r-paradise-all>h1 {
+        width: 100%;
+    }
+
+    .r-paradise-all-1 {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .r-paradise-phone-1 {
+        border-right: none;
+    }
+
+    .r-paradise-phone-2 {
+        border-right: none;
+        border-left: 1px solid #9C9B99;
+        padding-left: 10px;
+    }
+
+    .r-paradise-phone-3 {
+        border-left: 1px solid #9C9B99;
+        padding-left: 10px;
+    }
+
+    .r-footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    header {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    main {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    footer {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .trong {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+
+    }
+
+    .container-2 {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .container-1 {
+        width: 100%;
+    }
+
+    .r-menu {
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        left: 20px;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .r-icon {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .icon-menu {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .r-icon-1 {
+        display: none;
+    }
+
+    .r-icon-2 {
+        display: none;
+    }
+
+    .r-hot {
+        display: none;
+    }
+
+    .r-our {
+        width: 100%;
+        height: 3875px;
+        margin: 0 auto;
+    }
+
+    .r-mau-all {
+        width: 100%;
+        height: 900px;
+    }
+
+    .r-mau {
+        width: 70%;
+        height: 900px;
+    }
+
+    .r-our-1-all {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-our-1 {
+        width: 90%;
+        height: 200px;
+        align-items: center;
+    }
+
+    .r-our-all {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-our-all>h1 {
+        font-size: 60px;
+    }
+
+    .r-our-product {
+        width: 100%;
+    }
+
+    .r-our-product-all {
+        width: 99%;
+    }
+
+    .r-our-product-1>a>h3 {
+        font-size: 30px;
+    }
+
+    .r-our-product-a {
+        padding: 13px 30px;
+    }
+
+
+    .r-footer-all {
+        width: 100%;
+    }
+
+    .r-paradise {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-paradise-all {
+        width: 100%;
+    }
+
+    .r-paradise-all>h1 {
+        width: 100%;
+    }
+
+    .r-paradise-all-1 {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .r-paradise-phone-1 {
+        width: 100%;
+        border-right: none;
+    }
+
+    .r-paradise-phone-2 {
+        width: 100%;
+        border-right: none;
+        font-size: 10px;
+    }
+
+    .r-paradise-phone-3 {
+        width: 100%;
+    }
+
+    .r-footer {
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .r-footer-icon {
+        width: 17%;
+        margin: 0 auto;
+    }
+
+    .r-footer-privacy {
+        width: 100%;
+    }
+
+    .r-footer-mail {
+        width: 100%;
+    }
+}
